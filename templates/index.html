@@ -1,27 +1,139 @@
-<body class="">
+<body class="bg-slate-200 dark:bg-slate-950">
 {% include "style.html" %}
+{% include "scripts.html" %}
+<div class="w-auto backdrop-blur bg-white/20 dark:bg-gray-900/20 py-4 px-10 rounded-full border border-gray-300 dark:border-gray-800" style="
+    position: fixed;
+    right: 20px;
+    top: 20px;
+">
+    <ul class="items-center font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  border-gray-700">
+        <li>
+
+            <label onclick="changeTheme()" class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked="" id="themeToggle">
+                <div class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600" bis_skin_checked="1"></div>
+
+                <span class="ms-3 text-sm font-light text-gray-900 dark:text-gray-300">Dark</span></label>
+
+        </li>
+        <li>
+            <a href="#top" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About</a>
+        </li>
+        <li>
+            <a href="#skills" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+        </li>
+        <li>
+            <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+        </li>
+        <li>
+            <a href="#papers" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Papers</a>
+        </li>
+        <li>
+            <a href="#nonprofits" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Non-Profits </a>
+        </li>
 
 
-<nav class="pointer-events-auto m-auto m-6">
-    <ul class="flex text-white">
-        <li>
-            <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/">Home</a>
-        </li>
-        <li>
-            <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/about">About</a>
-        </li>
-        <li>
-            <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/projects">Projects</a>
-        </li>
     </ul>
-</nav>
-<div class="p-12 mt-10">
-    <h1
-            class="text-6xl text-white pb-5"
-            style="font-weight: 900;">Nicholas Wang</h1>
-    <p class="text-2xl text-gray-400">I like web development and coding in Python.</p>
-
-
 </div>
-
+<div style="
+                        background: linear-gradient(90deg, #03A9F4, #001cff);
+                        -webkit-animation: pulse 5s ease infinite;
+                        -moz-animation: pulse 5s ease infinite;
+                        animation: pulse 5s ease infinite;
+                        width: 500px;
+                        height:200px;
+                        filter: blur(200px);
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                        " class="absolute -z-10">
+</div><div style="
+                        background: linear-gradient(90deg, #03f47e, #003bff);
+                        -webkit-animation: pulse 5s ease infinite;
+                        -moz-animation: pulse 5s ease infinite;
+                        animation: pulse 5s ease infinite;
+                        filter: blur(200px);
+                        position: absolute;
+                        right: 10%;
+                        bottom: 10%;
+                        width: 500px;
+                        height: 200px;
+                        " class="absolute -z-10">
+</div>
+<div class="mt-32 m-auto text-center" style="width: 700px;">
+    <h1 class="text-5xl text-black dark:text-white pb-2 font-thin">👋 Hi, I'm </h1>
+    <h1 class="text-8xl text-black dark:text-white pb-5 font-extrabold"><span>Nicholas Wang</span></h1>
+    <p class="text-2xl text-gray-500 dark:text-gray-300 font-bold mt-12">BASIS Independent Silicon Valley '27</p>
+    <p class="text-xl text-gray-500 dark:text-gray-300 font-thin mt-4" style="font-family: monospace;">nicholas@nicholasxwang.dev</p>
+    <p class="mt-6 text-lg text-gray-500">I'm a high-schooler who enjoys web development & python programming and likes to experiment with APls, work on coding projects, and participate in hackathons. In addition to just casual coding, I compete in algorithmic programming competitions such as USACO and ACSL</p>
+</div>
+<div class="mt-80">
+    <h1 class="text-white text-3xl font-extrabold uppercase text-center bg-gradient-to-r decoration-clone from-sky-400 to-purple-400 text-transparent bg-clip-text">Skills</h1>
+</div>
+<div class="mt-80 mb-80">
+    <h1 class="text-white text-3xl font-extrabold uppercase text-center">Projects</h1>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">Stellar</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Try Stellar</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Visit GitHub Organization</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">Nebulus</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Try Nebulus</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Visit GitHub Organization</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">EventSync</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Try EventSync</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Visit GitHub Organization</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">EcoSort</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Devpost Submission</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Github</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">CyberChef</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Devpost Submission</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Github</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">MusiqueWorld</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Devpost Submission</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Github</button>
+    </div>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">Virtual Trick or Treat</h1>
+        <p>TBD.</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Devpost Submission</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Github</button>
+    </div>
+</div>
+<div class="mt-80 mb-80">
+    <h1 class="text-white text-3xl font-extrabold uppercase text-center">Papers</h1>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">GraphGPT: A Self Supervised-Learning for Intuitive, Logical, and Visual Education</h1>
+        <p>Abstract Released SOON</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read Paper (TBD)</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Github (TBD)</button>
+    </div>
+</div>
+<div class="mt-80 mb-80">
+    <h1 class="text-white text-3xl font-extrabold uppercase text-center">Non-Profit Organizations</h1>
+    <div class="p-8 m-10 bg-gray-800 rounded-lg">
+        <h1 class="text-3xl font-extrabold">Math, For Real</h1>
+        <p>Math, For Real is a nonprofit organization ...</p>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Visit Website</button>
+        <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Enroll Now</button>
+    </div>
+</div>
+<div class="mt-80 mb-80">
+    <h1 class="text-white text-3xl font-extrabold uppercase text-center">Resources</h1>
+</div>
 </body>

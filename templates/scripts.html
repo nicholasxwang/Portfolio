@@ -1,0 +1,28 @@
+<meta property="og:title" content="Nicholas Wang" />
+<title>Nicholas Wang</title>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://nicholasxwang.dev/" />
+<!--<meta property="og:image" content="http://my.site.com/images/thumb.png" />-->
+<meta property="og:description" content="" />
+<meta name="theme-color" content="#105f9c">
+<!--<meta name="twitter:card" content="summary_large_image">-->
+<script>
+    module.exports = {
+        darkMode: 'class',
+        // ...
+    }
+    // onload
+    window.onload = (event) => {
+        document.documentElement.classList.add('dark');
+    };
+
+    function changeTheme()
+    {
+        if (document.getElementById('themeToggle').checked)
+        {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }
+</script>
