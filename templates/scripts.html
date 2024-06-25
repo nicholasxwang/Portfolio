@@ -3,14 +3,18 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://nicholasxwang.dev/" />
 <!--<meta property="og:image" content="http://my.site.com/images/thumb.png" />-->
-<meta property="og:description" content="" />
+<meta property="og:description" content="Nicholas Wang is a high-schooler who enjoys web development & python programming and likes to experiment with APls, work on coding projects, and participate in hackathons. In addition to just casual coding, I compete in algorithmic programming competitions such as USACO and ACSL" />
 <meta name="theme-color" content="#105f9c">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<meta name="twitter:card" content="summary_large_image">-->
 <script>
-    module.exports = {
-        darkMode: 'class',
-        // ...
-    }
+    tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+            extend: {},
+        },
+    };
+
     // onload
     window.onload = (event) => {
         document.documentElement.classList.add('dark');
